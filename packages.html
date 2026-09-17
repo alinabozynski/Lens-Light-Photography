@@ -4,33 +4,39 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Lens & Light Photography — thoughtful photography for life's honest, luminous moments.">
-	<title>Lens & Light Photography | Featured Work</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
-	<link href="https://googleapis.com" rel="stylesheet">
+    <title>Lens & Light Photography | Packages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Homemade+Apple&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header id="top" class="header">
+	<header id="top" class="header content-padding">
 		<div class="header-content content">
 			<nav class="nav" aria-label="Main navigation">
 				<div class="logo-div">
 					<a class="brand" href="index.html">Lens &amp; Light</a>
-					<img src="images/menu.png" alt="Hamburger menu icon" class="hamburger" height="40" />
+                    <button type="button" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
 				</div>
-				<div class="nav-links">
-					<a href="featured-work.html" class="nav">Featured Work</a>
-					<a href="index.html#about" class="nav">About</a>
+                <div class="nav-links" id="main-navigation">
+					<a href="weddings-featured-work.html" class="nav">Featured Work</a>
 					<a href="#top" class="nav active">Packages</a>
-					<a href="#" class="nav">Contact</a>
+					<a href="contact.html" class="nav">Contact</a>
 				</div>
 			</nav>
 		</div>
 	</header>
-	<main>
-		<section class="main-section">
+	<main class="content-padding">
+        <section class="page-intro">
+            <p class="content section-kicker">Thoughtful coverage, beautifully planned</p>
+            <h1 class="content heading-font">Packages</h1>
+            <p class="content">Flexible photography experiences for weddings, portraits, and the everyday stories worth holding onto.</p>
+        </section>
+        <section class="tabs-section package-page">
 			<div class="featured-tabs content">
                 <a href="#weddings" class="nav active">Weddings</a>
                 <a href="#portraits" class="nav">Portraits</a>
@@ -38,10 +44,10 @@
             </div>
 		</section>
 
-        <section id="weddings" class="side-padding">
+        <section id="weddings" class="bottom-padding">
             <div class="content package-section">
                 <div class="title-wrapper">
-                    <h1 class="title">Weddings</h1>
+                    <h2 class="title heading-font">Weddings</h2>
                 </div>
                 <p class="intro">
                     Authentic, emotional photographs that capture every laugh, tear,
@@ -51,7 +57,7 @@
 
                     <div class="package">
                         <div class="price">$2,400</div>
-                        <div class="package-name">
+                        <div class="package-name heading-font">
                             Essential
                         </div>
                         <p class="description">
@@ -72,7 +78,7 @@
 
                     <div class="package">
                         <div class="price">$3,600</div>
-                        <div class="package-name">
+                        <div class="package-name heading-font">
                             Classic
                         </div>
                         <p class="description">
@@ -95,7 +101,7 @@
 
                     <div class="package">
                         <div class="price">$5,000</div>
-                        <div class="package-name">
+                        <div class="package-name heading-font">
                             Heirloom
                         </div>
                         <p class="description">
@@ -121,10 +127,10 @@
             </div>
         </section>
 
-        <section id="portraits" class="side-padding">
+        <section id="portraits" class="bottom-padding">
             <div class="content package-section">
                 <div class="title-wrapper">
-                    <h1 class="title">Portraits</h1>
+                    <h2 class="title heading-font">Portraits</h2>
                 </div>
                 <p class="intro">
                     Natural, expressive portraits designed to show the person behind the photograph.
@@ -133,7 +139,7 @@
                     
                     <div class="package">
                         <div class="price">$450</div>
-                        <div class="package-name">
+                        <div class="package-name heading-font">
                             Essential
                         </div>
                         <p class="description">
@@ -154,7 +160,7 @@
 
                     <div class="package">
                         <div class="price">$750</div>
-                        <div class="package-name">
+                        <div class="package-name heading-font">
                             Signature
                         </div>
                         <p class="description">
@@ -178,10 +184,10 @@
             </div>
         </section>
 
-        <section id="lifestyle" class="side-padding">
-            <div class="content package-section">
+        <section id="lifestyle">
+            <div class="content package-section last">
                 <div class="title-wrapper">
-                    <h1 class="title">Lifestyle</h1>
+                    <h2 class="title heading-font">Lifestyle</h2>
                 </div>
                 <p class="intro">
                     Beautifully imperfect moments, captured naturally and without forced poses.
@@ -190,7 +196,7 @@
                     
                     <div class="package">
                         <div class="price">$500</div>
-                        <div class="package-name">
+                        <div class="package-name heading-font">
                             Everyday
                         </div>
                         <p class="description">
@@ -211,7 +217,7 @@
 
                     <div class="package">
                         <div class="price">$850</div>
-                        <div class="package-name">
+                        <div class="package-name heading-font">
                             Story
                         </div>
                         <p class="description">
@@ -234,7 +240,7 @@
 
                     <div class="package">
                         <div class="price">$1,400</div>
-                        <div class="package-name">
+                        <div class="package-name heading-font">
                             Heirloom
                         </div>
                         <p class="description">
@@ -259,25 +265,32 @@
             </div>
         </section>
 
+        <div class="back-to-top">
+            <a href="#top">
+                <span class="arrow">↑</span>
+                <span>Back to Top</span>
+            </a>
+        </div>
+
 
 	</main>
 	<footer class="footer">
 		<div class="content">
 			<div class="columns">
 				<div class="footer-link-section">
-					<a href="#top" class="brand">Lens & Light</a>
+					<a href="index.html" class="brand">Lens & Light</a>
 					<p class="no-margin">Winnipeg, Manitoba</p>
 					<a href="mailto:Jane@LensLight.ca">Jane@LensLight.ca</a>
 					<a href="tel:2041234567">204-123-4567</a>
 				</div>
 				<div class="footer-link-section">
-					<h4 class="no-margin">Quick Links</h4>
-					<a href="#">Featured Work</a>
-					<a href="#">About Jane</a>
-					<a href="#">Pricing & Packages</a>
+					<p class="no-margin">Quick Links</p>
+					<a href="weddings-featured-work.html">Featured Work</a>
+					<a href="#top">Pricing & Packages</a>
+					<a href="contact.html">Contact</a>
 				</div>
 				<div class="footer-link-section">
-					<h4 class="no-margin">Stay in Touch</h4>
+					<p class="no-margin">Stay in Touch</p>
 					<a href="#">Instagram</a>
 					<a href="#">TikTok</a>
 					<a href="#">Facebook</a>
@@ -292,5 +305,23 @@
 			</div>
 		</div>
 	</footer>
+ 	<script>
+        const hamburger = document.querySelector(".hamburger");
+        const navigationLinks = document.querySelector(".nav-links");
+
+        function toggleNavigation() {
+            const isOpen = navigationLinks.classList.toggle("is-open");
+            hamburger.setAttribute("aria-expanded", isOpen);
+            hamburger.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+        }
+
+        hamburger.addEventListener("click", toggleNavigation);
+        hamburger.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                toggleNavigation();
+            }
+        });
+    </script>
 </body>
 </html>

@@ -7,34 +7,45 @@
 	<title>Lens & Light Photography | Home</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-	<link href="https://googleapis.com" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Allura&family=Homemade+Apple&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header id="top" class="header home">
+	<header id="top" class="header home content-padding">
 		<div class="header-content content">
 			<nav class="nav" aria-label="Main navigation">
 				<div class="logo-div">
 					<a class="brand" href="#top">Lens &amp; Light</a>
-					<img src="images/menu.png" alt="Hamburger menu icon" class="hamburger" height="40" />
+					<button type="button" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+							<path d="m6 9 6 6 6-6"></path>
+						</svg>
+					</button>
 				</div>
-				<div class="nav-links">
-					<a href="featured-work.html" class="nav">Featured Work</a>
-					<a href="#about" class="nav">About</a>
+				<div class="nav-links" id="main-navigation">
+					<a href="weddings-featured-work.html" class="nav">Featured Work</a>
 					<a href="packages.html" class="nav">Packages</a>
-					<a href="#" class="nav">Contact</a>
+					<a href="contact.html" class="nav">Contact</a>
 				</div>
 			</nav>
-			<h1>Document your journey.</h1>
+			<div class="hero-copy">
+				<p class="hero-eyebrow">Wedding · Portrait · Lifestyle</p>
+				<h1 class="heading-font">Where Moments Become Memories.</h1>
+				<p class="hero-intro">Honest, luminous photography for the moments that make your story yours.</p>
+				<div class="hero-actions">
+					<a class="hero-button" href="weddings-featured-work.html">View the work</a>
+					<a class="hero-text-link" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+				</div>
+			</div>
 		</div>
 	</header>
 	<main>
-		<section id="about" class="main-section">
+		<section id="about" class="t-b-padding content-padding">
 			<div class="content">
 				<div class="left">
+					<p class="section-kicker">A little about the artist</p>
 					<div class="about-heading">
-						<h2 class="no-margin">Hello, I&apos;m Jane</h2>
+						<h2 class="no-margin heading-font">Hello, I&apos;m Jane</h2>
 						<h4 class="no-margin">Lifestyle, Portrait, and Wedding Photographer</h4>
 					</div>
 					<div class="about-content">
@@ -42,19 +53,56 @@
 						<p>Photography, to me, is more than taking a beautiful picture. It&apos;s about preserving how a moment felt. I focus on natural interactions, genuine emotion, and the little details that make your story uniquely yours.</p>
 						<p>Take a look around, and thanks for being here. I&apos;d love to tell your story.</p>
 					</div>
-					<a href="#">Learn more →</a>
 				</div>
 				<div class="right">
-					<img width="400px" src="https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b?auto=format&fit=crop&w=800&q=85" alt="Image of Jane" />
+					<img width="400px" src="images/jane.jpg" alt="Image of Jane" />
 				</div>
 			</div>
 		</section>
-		<section id="preview" class="main-section content">
-			<h2 class="no-margin">Preview What I've Captured</h2>
+		<section id="preview" class="top-padding bottom-padding content content-padding">
+			<div class="section-heading">
+				<p class="section-kicker">Recent stories</p>
+				<h2 class="no-margin heading-font">Preview What I&apos;ve Captured</h2>
+			</div>
 			<p>My work is all about creating images that feel natural, timeless, and true to you.</p>
-			<div class="gallery-carousel">
-				<figure><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85" alt="Newlyweds embracing outdoors">
-				<figcaption>Wedding / The Wild Coast</figcaption></figure>
+			
+			<div class="carousel">
+				<button class="carousel-button carousel-button-left" aria-label="Previous image">
+					&#10094;
+				</button>
+
+				<div class="carousel-track-container">
+					<div class="carousel-track">
+						<div class="carousel-slide">
+							<img src="images/weddings/wedding2.jpg" alt="Example wedding photography">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="images/portraits/portrait1.jpg" alt="Example couple portrait">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="images/lifestyle/lifestyle1.jpg" alt="Example lifestyle photography">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="images/weddings/wedding1.avif" alt="Example outdoor portrait">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="images/portraits/portrait2.jpg" alt="Example outdoor portrait">
+						</div>
+
+						<div class="carousel-slide">
+							<img src="images/lifestyle/lifestyle3.avif" alt="Example outdoor portrait">
+						</div>
+					</div>
+				</div>
+
+				<button class="carousel-button carousel-button-right" aria-label="Next image">
+					&#10095;
+				</button>
+
 			</div>
 		</section>
 	</main>
@@ -68,13 +116,13 @@
 					<a href="tel:2041234567">204-123-4567</a>
 				</div>
 				<div class="footer-link-section">
-					<h4 class="no-margin">Quick Links</h4>
-					<a href="#">Featured Work</a>
-					<a href="#">About Jane</a>
-					<a href="#">Pricing & Packages</a>
+					<p class="no-margin">Quick Links</p>
+					<a href="weddings-featured-work.html">Featured Work</a>
+					<a href="packages.html">Pricing & Packages</a>
+					<a href="contact.html">Contact</a>
 				</div>
 				<div class="footer-link-section">
-					<h4 class="no-margin">Stay in Touch</h4>
+					<p class="no-margin">Stay in Touch</p>
 					<a href="#">Instagram</a>
 					<a href="#">TikTok</a>
 					<a href="#">Facebook</a>
@@ -89,5 +137,94 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		const track = document.querySelector(".carousel-track");
+		const trackContainer = document.querySelector(".carousel-track-container");
+		const slides = document.querySelectorAll(".carousel-slide");
+
+		const previousButton = document.querySelector(".carousel-button-left");
+		const nextButton = document.querySelector(".carousel-button-right");
+		const hamburger = document.querySelector(".hamburger");
+		const navigationLinks = document.querySelector(".nav-links");
+
+		let currentSlide = 0;
+		let touchStartX = 0;
+
+
+		function toggleNavigation() {
+			const isOpen = navigationLinks.classList.toggle("is-open");
+			hamburger.setAttribute("aria-expanded", isOpen);
+			hamburger.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+		}
+
+
+		hamburger.addEventListener("click", toggleNavigation);
+		hamburger.addEventListener("keydown", (event) => {
+			if (event.key === "Enter" || event.key === " ") {
+				event.preventDefault();
+				toggleNavigation();
+			}
+		});
+
+
+		function updateCarousel() {
+			track.style.transform = `translateX(-${currentSlide * 100}%)`;
+		}
+
+
+		nextButton.addEventListener("click", () => {
+
+			currentSlide++;
+
+			// Go back to the first image after the last one
+			if (currentSlide >= slides.length) {
+				currentSlide = 0;
+			}
+
+			updateCarousel();
+		});
+
+
+		previousButton.addEventListener("click", () => {
+
+			currentSlide--;
+
+			// Go to the last image if we're at the first
+			if (currentSlide < 0) {
+				currentSlide = slides.length - 1;
+			}
+
+			updateCarousel();
+		});
+
+
+		trackContainer.addEventListener("touchstart", (event) => {
+			if (event.touches.length === 1) {
+				touchStartX = event.touches[0].clientX;
+			}
+		}, { passive: true });
+
+		trackContainer.addEventListener("touchend", (event) => {
+			if (!touchStartX || event.changedTouches.length !== 1) {
+				touchStartX = 0;
+				return;
+			}
+
+			const touchEndX = event.changedTouches[0].clientX;
+			const swipeDistance = touchEndX - touchStartX;
+			const minimumSwipeDistance = 50;
+
+			if (Math.abs(swipeDistance) >= minimumSwipeDistance) {
+				if (swipeDistance < 0) {
+					nextButton.click();
+				} else {
+					previousButton.click();
+				}
+			}
+
+			touchStartX = 0;
+		}, { passive: true });
+	</script>
 </body>
 </html>

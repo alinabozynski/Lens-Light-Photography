@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Lens & Light Photography — thoughtful photography for life's honest, luminous moments.">
+    <title>Lens &amp; Light Photography | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Homemade+Apple&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header id="top" class="header content-padding">
+		<div class="header-content content">
+			<nav class="nav" aria-label="Main navigation">
+				<div class="logo-div">
+					<a class="brand" href="index.html">Lens &amp; Light</a>
+                    <button type="button" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+				</div>
+                <div class="nav-links" id="main-navigation">
+					<a href="weddings-featured-work.html" class="nav">Featured Work</a>
+					<a href="packages.html" class="nav">Packages</a>
+					<a href="#" class="nav active">Contact</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+    <main class="content-padding">
+			<div class="content form">
+                <h1 class="heading-font">Let's Connect</h1>
+                <p>
+                    Tell me a little about what you're planning, and I'll
+                    be in touch soon.
+                </p>
+
+                <form class="contact-form">
+
+                    <!-- First + Last Name -->
+                    <div class="name-fields">
+
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                autocomplete="given-name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                autocomplete="family-name"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            autocomplete="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            autocomplete="tel"
+                            placeholder="204-555-1234"
+                            pattern="[0-9\s\-\(\)\+]{10,20}"
+                            title="Please enter a valid phone number."
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Interested In -->
+                    <div class="form-group">
+                        <label for="interest">I'm Interested In</label>
+
+                        <select id="interest" name="interest" required>
+                            <option value="" disabled selected>
+                                Select an option
+                            </option>
+                            <option value="wedding">Weddings</option>
+                            <option value="portraits">Portraits</option>
+                            <option value="lifestyle">Lifestyle</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Date -->
+                    <div class="form-group">
+                        <label for="date">
+                            Preferred Date
+                            <span class="optional">(optional)</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                        >
+
+                        <span id="date-error" class="field-error"></span>
+                    </div>
+
+                    <!-- Questions -->
+                     <div class="form-group">
+                        <label for="questions">Questions or Details</label>
+                        <textarea
+                            id="questions"
+                            name="questions"
+                            rows="6"
+                            placeholder="Tell me a little about what you're planning..."
+                        ></textarea>
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button type="submit" class="submit-button">
+                        Send Inquiry
+                    </button>
+
+                </form>
+            </div>
+        </section>
+	</main>
+	<footer class="footer">
+		<div class="content">
+			<div class="columns">
+				<div class="footer-link-section">
+					<a href="index.html" class="brand">Lens & Light</a>
+					<p class="no-margin">Winnipeg, Manitoba</p>
+					<a href="mailto:Jane@LensLight.ca">Jane@LensLight.ca</a>
+					<a href="tel:2041234567">204-123-4567</a>
+				</div>
+				<div class="footer-link-section">
+					<p class="no-margin">Quick Links</p>
+					<a href="weddings-featured-work.html">Featured Work</a>
+					<a href="packages.html">Pricing & Packages</a>
+					<a href="#top">Contact</a>
+				</div>
+				<div class="footer-link-section">
+					<p class="no-margin">Stay in Touch</p>
+					<a href="#">Instagram</a>
+					<a href="#">TikTok</a>
+					<a href="#">Facebook</a>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="terms">
+					<a href="#">Privacy Policy</a>
+					<!-- <a href="#">Terms of Service</a> -->
+				</div>
+				<p class="no-margin">&copy; 2024 Lens &amp; Light Photography</p>	
+			</div>
+		</div>
+	</footer>
+
+    <script>
+        const form = document.querySelector(".contact-form");
+        const dateInput = document.querySelector("#date");
+        const dateError = document.querySelector("#date-error");
+
+        // Set today's date as the minimum selectable date
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, "0");
+        const day = String(today.getDate()).padStart(2, "0");
+
+        const todayString = `${year}-${month}-${day}`;
+
+        dateInput.min = todayString;
+                		const hamburger = document.querySelector(".hamburger");
+                		const navigationLinks = document.querySelector(".nav-links");
+
+                		function toggleNavigation() {
+                			const isOpen = navigationLinks.classList.toggle("is-open");
+                			hamburger.setAttribute("aria-expanded", isOpen);
+                			hamburger.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+                		}
+
+                		hamburger.addEventListener("click", toggleNavigation);
+                		hamburger.addEventListener("keydown", (event) => {
+                			if (event.key === "Enter" || event.key === " ") {
+                				event.preventDefault();
+                				toggleNavigation();
+                			}
+                		});
+
+
+
+        form.addEventListener("submit", function (event) {
+
+            dateError.textContent = "";
+
+            // Only validate the date if one was entered
+            if (dateInput.value) {
+
+                const selectedDate = new Date(dateInput.value + "T00:00:00");
+                const currentDate = new Date();
+
+                // Remove the time from today's date
+                currentDate.setHours(0, 0, 0, 0);
+
+                if (selectedDate <= currentDate) {
+                    event.preventDefault();
+
+                    dateError.textContent =
+                        "Please select a date in the future.";
+
+                    dateInput.focus();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
