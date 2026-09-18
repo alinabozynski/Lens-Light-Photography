@@ -809,6 +809,50 @@ body {
     color: #222;
 }
 
+.contact-toast {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 20;
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    width: min(440px, calc(100vw - 32px));
+    padding: 20px 18px 20px 22px;
+    border-left: 4px solid var(--accent-dark);
+    background: var(--paper);
+    box-shadow: 0 12px 35px rgba(38, 32, 24, 0.2);
+}
+
+.contact-toast[hidden] {
+    display: none;
+}
+
+.contact-toast p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.contact-toast-close {
+    flex: 0 0 auto;
+    width: 28px;
+    height: 28px;
+    margin: -6px -4px 0 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--accent-dark);
+    cursor: pointer;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.contact-toast-close:hover,
+.contact-toast-close:focus-visible {
+    color: var(--font-color);
+}
+
 
 /* Back to top */
 

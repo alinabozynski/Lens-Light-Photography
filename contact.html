@@ -183,10 +183,17 @@
 		</div>
 	</footer>
 
+	<div class="contact-toast" id="contact-toast" role="alert" aria-live="polite" hidden>
+		<p>Thanks for your message. I'll get back to you as soon as I can!</p>
+		<button type="button" class="contact-toast-close" aria-label="Close confirmation message">&times;</button>
+	</div>
+
     <script>
         const form = document.querySelector(".contact-form");
         const dateInput = document.querySelector("#date");
         const dateError = document.querySelector("#date-error");
+        const contactToast = document.querySelector("#contact-toast");
+        const contactToastClose = document.querySelector(".contact-toast-close");
 
         // Set today's date as the minimum selectable date
         const today = new Date();
@@ -238,6 +245,16 @@
                     dateInput.focus();
                 }
             }
+
+            if (!event.defaultPrevented) {
+                event.preventDefault();
+                contactToast.hidden = false;
+                contactToastClose.focus();
+            }
+        });
+
+        contactToastClose.addEventListener("click", function () {
+            contactToast.hidden = true;
         });
     </script>
 </body>
