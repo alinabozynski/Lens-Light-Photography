@@ -259,6 +259,9 @@ body {
     font-size: 15px;
     text-underline-offset: 5px;
 }
+.hero-text-link svg {
+    stroke: white;
+}
 .hero-text-link span {
     color: inherit;
     display: inline-block;
